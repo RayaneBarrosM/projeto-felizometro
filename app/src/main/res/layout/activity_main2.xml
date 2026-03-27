@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questionário da felicidade"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atividade práticadas"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <CheckBox
+        android:id="@+id/atv_estudando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="167dp"
+        android:text="Estudei"/>
+
+    <CheckBox
+        android:id="@+id/atv_trabalhando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trabalhei"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <CheckBox
+        android:id="@+id/atv_folga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folguei"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas de sono"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogp_sono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="339dp">
+
+        <RadioButton
+            android:id="@+id/sono_baixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0-3 horas"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <RadioButton
+            android:id="@+id/sono_medio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4-8 horas"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="389dp" />
+
+        <RadioButton
+            android:id="@+id/sono_alto"
+            android:layout_width="106dp"
+            android:layout_height="39dp"
+            android:text="8-12 horas"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="437dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nível de estresse"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="491dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="510dp">
+
+        <RadioButton
+            android:id="@+id/stress_baixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stress baixo"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="362dp" />
+
+        <RadioButton
+            android:id="@+id/stress_medio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stress médio"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="466dp" />
+
+        <RadioButton
+            android:id="@+id/stress_alto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stress alto"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="418dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="658dp" />
+
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="693dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
