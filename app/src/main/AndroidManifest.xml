@@ -12,10 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projeto4">
         <activity
-            android:name=".MainActivity3"
+            android:name=".ActivityHappyTest_organize"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".ActivityHappyTest_fine"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMegaSena"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityJokenPo"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHappyTest"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHappyTest"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityIMC"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHappyTest_rest"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

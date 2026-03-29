@@ -5,35 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".ActivityHappyTest_fine">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
         android:text="Resultado"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="157dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="result"
+        android:layout_marginHorizontal="20dp"
+        android:text="Continue cultivando esses bons hábitos e aproveite essa energia positiva para inspirar quem está ao seu redor!"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.282"
+        tools:layout_editor_absoluteX="4dp" />
 
     <Button
         android:id="@+id/btn_voltar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#F000"
         android:text="Voltar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="476dp" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

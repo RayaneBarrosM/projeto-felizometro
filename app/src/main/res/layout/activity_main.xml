@@ -15,48 +15,57 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/megaSena"
+        app:layout_constraintBottom_toTopOf="@+id/btnMegaSena"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.299" />
 
     <Button
-        android:id="@+id/megaSena"
+        android:id="@+id/btnMegaSena"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Projeto Mega-Sena"
-        app:layout_constraintBottom_toTopOf="@+id/imc"
-        tools:layout_editor_absoluteX="-16dp" />
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnImc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/happyTest"
+        android:id="@+id/btnHappyTest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="328dp"
         android:text="Projeto Medidor de felicidade"
+        android:layout_marginHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/JokenPo"
+        android:id="@+id/btnJokenPo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Projeto Jokenpo"
-        app:layout_constraintBottom_toTopOf="@+id/happyTest"
-        app:layout_constraintTop_toBottomOf="@+id/imc"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHappyTest"
+        app:layout_constraintTop_toBottomOf="@+id/btnImc"
         app:layout_constraintVertical_bias="0.577"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/imc"
+        android:id="@+id/btnImc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="ProjetoIMC"
-        app:layout_constraintTop_toBottomOf="@+id/megaSena"
-        tools:layout_editor_absoluteX="-16dp" />
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnMegaSena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
