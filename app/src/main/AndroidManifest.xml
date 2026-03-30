@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projeto4">
         <activity
+            android:name=".ActivityThin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityNormal"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCorpulent"
+            android:exported="false" />
+        <activity
             android:name=".ActivityHappyTest_organize"
             android:exported="false" />
         <activity

@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/radiogp_sono" />
 
     <RadioGroup
-        android:id="@+id/radiogp_strees"
+        android:id="@+id/radiogp_stress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,10 +127,10 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radiogp_strees" />
+        app:layout_constraintTop_toBottomOf="@+id/radiogp_stress" />
 
     <Button
-        android:id="@+id/btn_voltar"
+        android:id="@+id/btnVoltar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="592dp"

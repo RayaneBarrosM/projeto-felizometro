@@ -5,6 +5,125 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityJokenPo">
+    tools:context=".ActivityJokenPo"
+    android:background="#FDD9">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JoKenPo"
+            android:textAlignment="center"
+            android:textColor="#F052"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <View
+            android:id="@+id/placar"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/padrao"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle"
+            app:layout_constraintVertical_bias="0.516"
+            app:layout_constraintWidth_percent="0.5"/>
+
+
+        <TextView
+            android:id="@+id/pontuacao"
+            android:layout_width="106dp"
+            android:layout_height="44dp"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintBottom_toBottomOf="@+id/placar"
+            app:layout_constraintEnd_toEndOf="@+id/placar"
+            app:layout_constraintStart_toStartOf="@+id/placar"
+            app:layout_constraintTop_toTopOf="@+id/placar" />
+
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha a sua opção"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/padrao"
+            app:layout_constraintVertical_bias="0.119" />
+
+
+        <ImageView
+            android:id="@+id/padrao"
+            android:layout_width="172dp"
+            android:layout_height="164dp"
+            android:layout_marginBottom="344dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/padrao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pontuacao"
+            app:layout_constraintVertical_bias="0.671" />
+
+        <ImageView
+            android:id="@+id/paper"
+            android:layout_width="107dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="28dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/papel"
+            android:onClick="selectPapel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textResultado" />
+
+        <ImageView
+            android:id="@+id/tesoura"
+            android:layout_width="107dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="24dp"
+            android:onClick="selectTesoura"
+            android:scaleType="centerInside"
+            android:src="@drawable/tesoura"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/paper"
+            app:layout_constraintTop_toBottomOf="@+id/textResultado"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <ImageView
+            android:id="@+id/pedra"
+            android:layout_width="107dp"
+            android:layout_height="106dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/pedra"
+            android:onClick="selectPedra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tesoura"
+            app:layout_constraintTop_toBottomOf="@+id/textResultado" />
+
+        <Button
+            android:id="@+id/btClean"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Recomeçar"
+            android:backgroundTint="#F052"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tesoura" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

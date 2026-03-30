@@ -27,13 +27,13 @@
         android:text="Continue cultivando esses bons hábitos e aproveite essa energia positiva para inspirar quem está ao seu redor!"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.282"
         tools:layout_editor_absoluteX="4dp" />
 
     <Button
-        android:id="@+id/btn_voltar"
+        android:id="@+id/btnVoltar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"

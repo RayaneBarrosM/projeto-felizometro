@@ -24,15 +24,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="72dp"
         android:text="Lembre-se que descansar não é perda de tempo, é necessidade. Às vezes, o passo mais produtivo que você pode dar é parar um pouco, dormir melhor e reduzir as cobranças sobre si mesmo. Você merece esse cuidado."
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="50dp" />
+        tools:layout_editor_absoluteX="24dp" />
 
     <Button
-        android:id="@+id/btn_voltar"
+        android:id="@+id/btnVoltar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -40,9 +41,10 @@
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_result" />
+        app:layout_constraintTop_toBottomOf="@+id/text_result"
+        app:layout_constraintVertical_bias="0.531" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,12 +27,12 @@
         android:text="Talvez sua rotina esteja um pouco sobrecarregada. Tente organizar melhor suas prioridades e não esqueça de reservar um tempo para o que te faz bem."
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="24dp" />
 
     <Button
-        android:id="@+id/btn_voltar"
+        android:id="@+id/btnVoltar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
