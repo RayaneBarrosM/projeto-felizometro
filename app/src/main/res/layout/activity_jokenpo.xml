@@ -118,12 +118,27 @@
             android:id="@+id/btClean"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:text="Recomeçar"
             android:backgroundTint="#F052"
+            android:text="Recomeçar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.309"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tesoura" />
+            app:layout_constraintTop_toBottomOf="@+id/tesoura"
+            app:layout_constraintVertical_bias="0.483" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#F000"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.746"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tesoura"
+            app:layout_constraintVertical_bias="0.483" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
